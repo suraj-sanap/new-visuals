@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to create an Amazon Linux server on AWS, step by step</title>
+<meta name="description" content="Animated visual: launch an Amazon Linux 2023 EC2 server in AWS, then connect with PuTTY or MobaXterm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <header><h1>Ravi's warehouse</h1><p>Create an Amazon Linux server, one step at a time.</p></header>
+    <nav id="steps" class="steps" aria-label="Steps"></nav>
+    <div class="ctrl">
+      <button id="play" type="button" aria-pressed="false">Auto-play</button>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <section class="legend"><h2>Moving objects</h2><ul id="legend"></ul></section>
+  </aside>
+  <main>
+    <div class="scroll"><div class="stage"><svg id="diagram" viewBox="0 0 1100 360" role="img" aria-label="The AWS Cloud growing as an EC2 instance is created"></svg></div></div>
+    <div class="scroll"><div id="putty" class="putty con"></div></div>
+        <section class="card caption" aria-live="polite">
+      <h2 id="cap-title"></h2>
+      <div class="parts">
+        <div><h3>In plain words</h3><p id="cap-plain"></p></div>
+        <div><h3>Technical name</h3><p id="cap-tech"></p></div>
+        <div><h3>Watch the picture</h3><p id="cap-watch"></p></div>
+        <div><h3>Why it matters</h3><p id="cap-why"></p></div>
+      </div>
+    </section>
+    <section class="card"><h2 id="cmd-head">Commands</h2><div id="cmds"></div></section>
+      </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
